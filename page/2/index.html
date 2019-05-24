@@ -1,89 +1,132 @@
-<!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-
+    <link rel="icon" href="/images/favicon.ico">
   
   <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="default">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/lib/jquery.js"></script>
+  <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+  <script src="/js/common.js"></script>
+  <script src="/lib/bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 </head>
-</html>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+
+  <body>
+    <header class="header">
+  <div class="color-bar">
+    <ul>
+      <li class="bar1"></li>
+      <li class="bar2"></li>
+      <li class="bar3"></li>
+      <li class="bar4"></li>
+      <li class="bar5"></li>
+      <li class="bar6"></li>
+    </ul>
+  </div>
+  <div class="header-wrapper">
+    <div class="blog-title">
       
+        <img class="logo" src="/images/logo.png" alt="logo">
+      
+      <a href="/" class="title">Hexo</a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+    <nav class="navbar navbar-menu">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" id="nav-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
       </div>
-    </div>
+        <ul class="menu menu-pc">
+          
+            <li class="menu-item">
+              <a href="/" class="menu-item-link"><i class="fa fa-home"></i><span>首页</span></a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/tags/" class="menu-item-link"><i class="fa fa-tags"></i><span>Tags</span></a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/archives/" class="menu-item-link"><i class="fa fa-file"></i><span>归档</span></a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="https://github.com/littleee/" class="menu-item-link"><i class="fa fa-github"></i><span>github</span></a>
+            </li>
+          
+        </ul>
+    </nav>
   </div>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-apache" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/25/apache/" class="article-date">
-  <time datetime="2018-12-25T09:31:53.000Z" itemprop="datePublished">2018-12-25</time>
-</a>
+<div class="collapse nav-collapse" style="position:fixed;top:59px;" id="bs-example-navbar-collapse-1">
+  <ul class="menu menu-mobile" style="list-style:none">
     
-  </div>
-  <div class="article-inner">
+      <li class="menu-item">
+        <a href="/" class="menu-item-link"><i class="fa fa-home"></i><span>首页</span></a>
+      </li>
     
+      <li class="menu-item">
+        <a href="/tags/" class="menu-item-link"><i class="fa fa-tags"></i><span>Tags</span></a>
+      </li>
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/25/apache/">LINUX Apache 搭建</a>
-    </h1>
-  
+      <li class="menu-item">
+        <a href="/archives/" class="menu-item-link"><i class="fa fa-file"></i><span>归档</span></a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="https://github.com/littleee/" class="menu-item-link"><i class="fa fa-github"></i><span>github</span></a>
+      </li>
+    
+  </ul>
+</div>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+    <main class="main">
+      <div class="content">
+        
+
+<section class="banner">
+  <div class="headintro">
+    <p class="title">HELLO, IM CORA</p>
+    <p class="subtitle">三流代码 &amp; 一流Bug</p>
+  </div>
+</section>
+
+
+
+<section class="posts">
+  
+    <article class="post">
+      <div class="post-meta">
+        <span class="post-time">2018-12-25</span>
+      </div>
+      <div class="post-title">
+        
+          <a class="post-title-link" href="/2018/12/25/apache/">
+            
+              LINUX Apache 搭建
+            
+          </a>
+          
+        
+        <div class="post-tags">
+          
+            <p>LINUX</p>
+          
+        </div>
+      </div>
+      <div class="post-content">
+
+        
+
+        
         <p><span lang="en-US"><span lang="en-US">Apache</span></span><span lang="zh-CN">搭建</span></p>
 <p><a href></a> <span lang="zh-CN">本机 </span><span lang="en-US"><span lang="en-US">ip 192.168.5.147 </span></span><span lang="zh-CN">搭建完成的 </span><span lang="en-US"><span lang="en-US">Dns</span></span><span lang="zh-CN">服务器</span><span lang="en-US"><span lang="en-US">,</span></span><span lang="zh-CN">首先需要将</span><span lang="en-US"><span lang="en-US">DNS</span></span><span lang="zh-CN">服务器切换成</span><span lang="en-US"><span lang="en-US">192.168.5.147</span></span><span lang="zh-CN">，</span></p>
 <p><a href></a> <span lang="en-US"><span lang="en-US">Apache</span></span><span lang="zh-CN">是</span><span lang="en-US"><span lang="en-US">php</span></span><span lang="zh-CN">环境的组件，</span><span style="font-variant: normal"><span style="letter-spacing: normal"><span style="text-decoration: none"><span style="background: #ffffff"><span style="font-style: normal"> </span></span></span></span></span><span style="font-variant: normal"><span style="letter-spacing: normal"><span style="background: #ffffff"><span style="font-style: normal"> </span><span lang="en-US"><span style="font-style: normal">Apache</span></span><span style="font-style: normal">是世界使用排名第一的</span><span lang="en-US"><span style="font-style: normal">Web</span></span></span></span></span><a href="https://baike.baidu.com/item/%E6%9C%8D%E5%8A%A1%E5%99%A8" target="_blank" rel="noopener"><span style="font-variant: normal"><span style="letter-spacing: normal"><span style="text-decoration: none"><span style="background: #ffffff"><span style="font-style: normal">服务器</span></span></span></span></span></a><span style="font-variant: normal"><span style="letter-spacing: normal"><span style="background: #ffffff"><span style="font-style: normal">软件。它可以运行在几乎所有广泛使用的</span></span></span></span><a href="https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B9%B3%E5%8F%B0/2606037" target="_blank" rel="noopener"><span style="font-variant: normal"><span style="letter-spacing: normal"><span style="text-decoration: none"><span style="background: #ffffff"><span style="font-style: normal">计算机平台</span></span></span></span></span></a><span style="font-variant: normal"><span style="letter-spacing: normal"><span style="background: #ffffff"><span style="font-style: normal">上，由于其</span></span></span></span><a href="https://baike.baidu.com/item/%E8%B7%A8%E5%B9%B3%E5%8F%B0/8558902" target="_blank" rel="noopener"><span style="font-variant: normal"><span style="letter-spacing: normal"><span style="text-decoration: none"><span style="background: #ffffff"><span style="font-style: normal">跨平台</span></span></span></span></span></a><span style="font-variant: normal"><span style="letter-spacing: normal"><span style="background: #ffffff"><span style="font-style: normal">和安全性被广泛使用，是最流行的</span><span lang="en-US"><span style="font-style: normal">Web</span></span><span style="font-style: normal">服务器端软件之一</span></span></span></span><span lang="zh-CN">，</span><span lang="en-US"><span lang="en-US">linux</span></span><span lang="zh-CN">搭建好了</span><span lang="en-US"><span lang="en-US">apache</span></span><span lang="zh-CN">就相当于</span><span lang="en-US"><span lang="en-US">windows</span></span><span lang="zh-CN">开启了一个</span><span lang="en-US"><span lang="en-US">phpstudy</span></span><span lang="zh-CN">，通俗的说就是开启了一个</span><span lang="en-US"><span lang="en-US">web</span></span><span lang="zh-CN">容器，可以在网页上显示自己的目录。</span></p>
@@ -175,43 +218,34 @@
 <p><span lang="zh-CN">大功告成</span></p>
 <p>\</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/25/apache/" data-id="cjw1det9q000w98v64htoplna" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LINUX/">LINUX</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-LINUX-centos7-vmtools-安装" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/16/LINUX-centos7-vmtools-安装/" class="article-date">
-  <time datetime="2018-12-16T07:51:56.000Z" itemprop="datePublished">2018-12-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
+      </div>
+    </article>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/16/LINUX-centos7-vmtools-安装/">LINUX centos7 vmtools 安装</a>
-    </h1>
-  
+    <article class="post">
+      <div class="post-meta">
+        <span class="post-time">2018-12-16</span>
+      </div>
+      <div class="post-title">
+        
+          <a class="post-title-link" href="/2018/12/16/LINUX-centos7-vmtools-安装/">
+            
+              LINUX centos7 vmtools 安装
+            
+          </a>
+          
+        
+        <div class="post-tags">
+          
+            <p>LINUX</p>
+          
+        </div>
+      </div>
+      <div class="post-content">
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+        
+
+        
         <p></p><h2>如何在centos7上安装VMtools</h2><br> 首先点左右上角虚拟机目录下的安装vmtools<br><br> <img src="http://155.254.48.100/bolgimg/LINUX/vmtools/1.png" alt><br> 然后桌面会出现一个vmtools光盘<br><br> <img src="http://155.254.48.100/bolgimg/LINUX/vmtools/2.png" alt><br> 右键打开vmtools光盘 把 VMwareTools-10.3.2-9925305.tar.gz 复制到Home文件夹下 （光盘内文件为只读不可直接解压）<br><br> <img src="http://155.254.48.100/bolgimg/LINUX/vmtools/3.png" alt><br>打开home文件夹 右键打开终端<br><br>先用 <p></p>
 <blockquote>
 <p> <strong># ls</strong> </p>
@@ -235,43 +269,34 @@
 </blockquote>
 <p><img src="http://155.254.48.100/bolgimg/LINUX/vmtools/7.png" alt><br> 一路Enter 需要输入 yes 和 no 时就按照提示输入不需要的地方就按Enter<br><br>当页面显示<code>enjoy</code>时安装完成<br><img src="http://155.254.48.100/bolgimg/LINUX/vmtools/8.png" alt><br>最后重启一下就可以了</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/16/LINUX-centos7-vmtools-安装/" data-id="cjw1det8b000398v6uwx5lykk" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LINUX/">LINUX</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-LINUX-DNS-搭建" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/15/LINUX-DNS-搭建/" class="article-date">
-  <time datetime="2018-12-15T09:31:53.000Z" itemprop="datePublished">2018-12-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
+      </div>
+    </article>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/15/LINUX-DNS-搭建/">LINUX DNS 搭建</a>
-    </h1>
-  
+    <article class="post">
+      <div class="post-meta">
+        <span class="post-time">2018-12-15</span>
+      </div>
+      <div class="post-title">
+        
+          <a class="post-title-link" href="/2018/12/15/LINUX-DNS-搭建/">
+            
+              LINUX DNS 搭建
+            
+          </a>
+          
+        
+        <div class="post-tags">
+          
+            <p>LINUX</p>
+          
+        </div>
+      </div>
+      <div class="post-content">
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+        
+
+        
         <p></p><h2>DNS相关信息</h2><p></p>
 <p></p><h3>1. 什么是DNS</h3><p></p>
 <blockquote>
@@ -382,128 +407,41 @@
 <p><img src="http://155.254.48.100/bolgimg/LINUX/linuxDns/8.png" alt></p>
 <p>如果你的和图中解析的一样的话，dns就初步搭好了</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/15/LINUX-DNS-搭建/" data-id="cjw1det8d000498v61c2lyuyk" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LINUX/">LINUX</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/BURP/">BURP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FLAG/">FLAG</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/KALI-freekill/">KALI_freekill</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LINUX/">LINUX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MSF/">MSF</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PYTHON/">PYTHON</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PYTHON-str-deal/">PYTHON_str_deal</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/repetition/">repetition</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/BURP/" style="font-size: 10px;">BURP</a> <a href="/tags/FLAG/" style="font-size: 10px;">FLAG</a> <a href="/tags/KALI-freekill/" style="font-size: 10px;">KALI_freekill</a> <a href="/tags/LINUX/" style="font-size: 20px;">LINUX</a> <a href="/tags/MSF/" style="font-size: 10px;">MSF</a> <a href="/tags/PYTHON/" style="font-size: 10px;">PYTHON</a> <a href="/tags/PYTHON-str-deal/" style="font-size: 10px;">PYTHON_str_deal</a> <a href="/tags/repetition/" style="font-size: 10px;">repetition</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/05/23/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2019/05/17/Dc6/">DC6攻击记录</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/17/antsword/">antsword蚁剑</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/14/burp-mobile/">burp_mobile</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/13/Cobalt-Strike搭建和使用/">Cobalt Strike搭建和使用</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
         
       </div>
-      <footer id="footer">
+    </article>
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+</section>
+
+  <nav class="page-nav">
+    <a class="extend prev" rel="prev" href="/">Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+
+
+      </div>
+        <div class="footer">
+  <div class="footer-wrapper">
+    <div class="copyright">
+      
+      <span>&copy;</span>
+      
+      <span>2017 - 2019</span>
+      
+      <span class="author"><i class="fa fa-user"></i>John Doe</span>
     </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
     
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
+      <span>Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> </span>
+    
+    
+      <span>|</span> <span>Theme - <a href="https://github.com/littleee/corazon">Corazon</a></span>
+      
+        <span>v1.0.0</span>
+      
+    
   </div>
-</body>
+</div>
+
+    </main>
+  </body>
 </html>
